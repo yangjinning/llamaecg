@@ -1,0 +1,7 @@
+{
+    "description": "Template used for ECG analysis.",
+    "llama3.1_chat_prompt": "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nYou are a medical expert specializing in electrocardiography (ECG) analysis.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBelow is an ECG time-series signal followed by a question. Analyze the ECG data and provide a concise answer.\n\nECG Time-Series Data:\nlead I:{ecg_data}\n\nQuestion:\n{question}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+    "prompt": "Below is an ECG time-series signal followed by a question. Analyze the ECG data and provide a concise answer.\n\nECG Time-Series Data:\nlead I:{ecg_data}\n\nQuestion:\n{question}\n\nAnswer:\n",
+    "response_chat_split": "<|start_header_id|>assistant<|end_header_id|>",
+    "response_prompt_split": "Answer:"
+}
